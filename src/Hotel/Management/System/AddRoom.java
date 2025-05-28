@@ -78,7 +78,7 @@ public class AddRoom extends JFrame implements ActionListener {
 
 
 
-        JLabel l6 = new JLabel("Bed Type");
+        JLabel l6 = new JLabel("BED Type");
         l6.setBounds(64,230,152,22);
         l6.setFont(new Font("Tahoma",Font.BOLD,14));
         l6.setForeground(Color.WHITE);
@@ -91,19 +91,21 @@ public class AddRoom extends JFrame implements ActionListener {
         t6.setForeground(Color.BLACK);
         panel.add(t6);
 
+        b2 = new JButton("Back");
+        b2.setBounds(64,321,111,33);
+        b2.setBackground(new Color(30,26,26));
+        b2.setForeground(Color.WHITE);
+        b2.addActionListener(this);
+        panel.add(b2);
+
+
         b1 = new JButton("Add");
-        b1.setBounds(64,321,111,33);
+        b1.setBounds(198,321,111,33);
         b1.setBackground(new Color(30,26,26));
         b1.setForeground(Color.WHITE);
         b1.addActionListener(this);
         panel.add(b1);
 
-        b2 = new JButton("Back");
-        b2.setBounds(198,321,111,33);
-        b2.setBackground(new Color(30,26,26));
-        b2.setForeground(Color.WHITE);
-        b2.addActionListener(this);
-        panel.add(b2);
 
         ImageIcon imageIcon = new ImageIcon(ClassLoader.getSystemResource("icon/roomser.png"));
         Image image = imageIcon.getImage().getScaledInstance(300,300,Image.SCALE_DEFAULT);

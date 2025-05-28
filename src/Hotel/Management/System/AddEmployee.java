@@ -142,19 +142,20 @@ public class AddEmployee extends JFrame implements ActionListener {
         AED.setForeground(Color.WHITE);
         panel.add(AED);
 
-
-        add = new JButton("ADD");
-        add.setBounds(80,420,100,30);
-        add.setBackground(new Color(30,26,26));
-        add.setForeground(Color.WHITE);
-        add.addActionListener(this);
-        panel.add(add);
         back = new JButton("BACk");
-        back.setBounds(200,420,100,30);
+        back.setBounds(80,420,100,30);
         back.setBackground(new Color(30,26,26));
         back.setForeground(Color.WHITE);
         back.addActionListener(this);
         panel.add(back);
+
+        add = new JButton("ADD");
+        add.setBounds(200,420,100,30);
+        add.setBackground(new Color(30,26,26));
+        add.setForeground(Color.WHITE);
+        add.addActionListener(this);
+        panel.add(add);
+
 
         ImageIcon imageIcon = new ImageIcon(ClassLoader.getSystemResource("icon/addemp.png"));
         Image image = imageIcon.getImage().getScaledInstance(300,300,Image.SCALE_DEFAULT);

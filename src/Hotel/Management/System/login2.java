@@ -61,6 +61,7 @@ public class login2 extends JFrame implements ActionListener {
 
         setLayout(null);
         setSize(600,300);
+        setResizable(false);
         setLocation(400,270);
         getContentPane().setBackground(new Color(0, 0, 0));
         setVisible(true);
@@ -88,6 +89,7 @@ public class login2 extends JFrame implements ActionListener {
             }
         }  else{
             new Dashboard();
+            setVisible(false);
         }
     }
 

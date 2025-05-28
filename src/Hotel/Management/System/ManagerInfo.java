@@ -109,6 +109,7 @@ public class ManagerInfo extends JFrame {
 
         setLayout(null);
         setUndecorated(true);
+        setResizable(false);
         setSize(1000,600);
         setLocation(285,70);
         setVisible(true);

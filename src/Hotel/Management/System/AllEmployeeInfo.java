@@ -109,6 +109,7 @@ public class AllEmployeeInfo extends JFrame {
         setLayout(null);
         setUndecorated(true);
         setSize(1000,600);
+        setResizable(false);
         setLocation(285,70);
         setVisible(true);
     }

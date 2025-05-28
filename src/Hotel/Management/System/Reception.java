@@ -43,7 +43,7 @@ public class Reception extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 try{
-
+                   new NewCustomer();
                 } catch (Exception ex) {
                     throw new RuntimeException(ex);
                 }
@@ -59,7 +59,7 @@ public class Reception extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 try{
-
+                     new Room();
                 } catch (Exception ex) {
                     throw new RuntimeException(ex);
                 }
@@ -76,7 +76,7 @@ public class Reception extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 try{
-
+                    new Department();
                 } catch (Exception ex) {
                     throw new RuntimeException(ex);
                 }
@@ -92,6 +92,7 @@ public class Reception extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 try{
+                    new AllEmployeeInfo();
 
                 } catch (Exception ex) {
                     throw new RuntimeException(ex);
@@ -109,6 +110,7 @@ public class Reception extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 try{
+                    new CustomerInfo();
 
                 } catch (Exception ex) {
                     throw new RuntimeException(ex);
@@ -127,6 +129,7 @@ public class Reception extends JFrame {
             public void actionPerformed(ActionEvent e) {
                 try{
 
+                    new ManagerInfo();
                 } catch (Exception ex) {
                     throw new RuntimeException(ex);
                 }
@@ -216,11 +219,30 @@ public class Reception extends JFrame {
             public void actionPerformed(ActionEvent e) {
                 try{
 
+                    new SearchRoom();
                 } catch (Exception ex) {
                     throw new RuntimeException(ex);
                 }
             }});
 
+
+
+        JButton back= new JButton("Back");
+        back.setBounds(30,650,100,30);
+        back.setBackground(new Color(30,26,26));
+        back.setForeground(Color.WHITE);
+        panel.add(back);
+        back.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                try{
+                    new Dashboard();
+                    setVisible(false);
+                } catch (Exception ex) {
+                    throw new RuntimeException(ex);
+                }
+            }
+        });
 
 
 
@@ -229,6 +251,7 @@ public class Reception extends JFrame {
 
 
         getContentPane().setBackground(Color.WHITE);
+        setResizable(false);
         setSize(1950,1090);
         setLayout(null);
         setVisible(true);

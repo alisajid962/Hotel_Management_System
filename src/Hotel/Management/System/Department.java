@@ -64,6 +64,7 @@ public class Department extends JFrame {
 
 
         setLocation(350,50);
+        setResizable(false);
         setUndecorated(true);
         setLayout(null);
         setSize(700,500);

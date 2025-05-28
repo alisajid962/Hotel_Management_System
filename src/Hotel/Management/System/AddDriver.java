@@ -139,6 +139,7 @@ public class AddDriver extends JFrame implements ActionListener {
 
         setLayout(null);
         setUndecorated(true);
+        setResizable(false);
         setLocation(200,100);
         setSize(900,500);
         setVisible(true);

@@ -58,7 +58,7 @@ public class Dashboard extends JFrame implements ActionListener {
            new Reception();
             setVisible(false);
         }else {
-//            new Login2();
+            new login2();
             setVisible(false);
         }
     }
