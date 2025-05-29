@@ -1,7 +1,5 @@
 package Hotel.Management.System;
-
 import net.proteanit.sql.DbUtils;
-
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;

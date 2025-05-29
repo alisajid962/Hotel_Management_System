@@ -164,7 +164,7 @@ public class Reception extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 try{
-
+                    new updateCheckIn();
                 } catch (Exception ex) {
                     throw new RuntimeException(ex);
                 }
@@ -181,6 +181,7 @@ public class Reception extends JFrame {
             public void actionPerformed(ActionEvent e) {
                 try{
 
+                    new updateRoom();
                 } catch (Exception ex) {
                     throw new RuntimeException(ex);
                 }
@@ -201,6 +202,7 @@ public class Reception extends JFrame {
             public void actionPerformed(ActionEvent e) {
                 try{
 
+                    new pickUp();
                 } catch (Exception ex) {
                     throw new RuntimeException(ex);
                 }
